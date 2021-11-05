@@ -1,16 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Threading.Tasks;
 using System.Web.Mvc;
+using MiniProfilerDemo.Infrastructure;
+using MiniProfilerDemo.Models;
+using NHibernate.Linq;
 
 namespace MiniProfilerDemo.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            return View();
+            using (var session = NHibernateHelper.OpenSession())
+            {
+                var employees = await session.Query<Employee>().ToListAsync();
+                return View(employees);
+            }
         }
 
         public ActionResult About()
