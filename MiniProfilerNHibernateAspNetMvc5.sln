@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfilerDemo", "src\MiniProfilerDemo\MiniProfilerDemo.csproj", "{FF7A9935-693A-45C4-B1DB-8205D2B62D84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF7A9935-693A-45C4-B1DB-8205D2B62D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7A9935-693A-45C4-B1DB-8205D2B62D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7A9935-693A-45C4-B1DB-8205D2B62D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7A9935-693A-45C4-B1DB-8205D2B62D84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
