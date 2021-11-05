@@ -1,0 +1,17 @@
+﻿@model MiniProfilerDemo.Models.Employee
+
+@{
+    ViewBag.Title = "New Employee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New Employee</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(x => x.Name)
+        @Html.TextBoxFor(x => x.Name, new {@class = "form-control"})
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+}
